@@ -7,6 +7,10 @@
   <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -17,23 +21,23 @@
       <nav class="header__navigation navigation">
         <a class="navigation__logo logo" href="#">
           <picture>
-            <img class="logo__image" alt="Логотип сайта Кэт энерджи" src="#" width="202" height="59">
+            <source media="(min-width: 1200px)" width="70" height="59" srcset="images/logo-image-desktop.svg" type="image/svg+xml">
+            <source media="(min-width: 768px)" width="60" height="50" srcset="images/logo-image-tablet.svg" type="image/svg+xml">
+            <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
           </picture>
-          <picture>
-            <img class="logo__text" alt="Логотип сайта Кэт энерджи" src="#" width="202" height="59">
-          </picture>
+          <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="navigation__list">
-          <li class="navigation__list-item">
-            <a class="navigation__list-link navigation__list-link--current" href="#">Главная</a>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#">Главная</a>
           </li>
-          <li class="navigation__list-item">
-            <a class="navigation__list-link" href="#">Каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Каталог продукции</a>
           </li>
-          <li class="navigation__list-item">
-            <a class="navigation__list-link" href="#">Подбор программы</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -44,9 +48,13 @@
     <section class="main__hero hero">
       <div class="main__container container">
         <h1 class="hero__title title-h1">Функциональное <br>питание для котов</h1>
-        <p class="hero-title__subtitle">Занялся собой? Займись котом!</p>
-        <button class="hero__button button button--primary" type="button">Подобрать программу</button>
-        <img class="hero__content-image" alt="Корм для котов" src="#" width="0" height="0">
+        <p class="hero__subtitle subtitle">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1200px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png, images/hero-image-desktop@2x.png 2x" type="image/png">
+          <source media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png, images/hero-image-tablet@2x.png 2x" type="image/png">
+          <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Банка с питанием для котов Cat energy">
+        </picture>
+        <a class="hero__button button button--primary" href="#">Подобрать программу</a>
 
         <section class="main__benefits benefits">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -62,8 +70,8 @@
           </div>
         </section>
 
-        <section class="main__advantagies">
-          <h2 class="advantagies__title title-first">Как это работает</h2>
+        <section class="main__advantagies advantagies">
+          <h2 class="advantagies__title title-h1">Как это работает</h2>
           <ul class="advantagies__list">
             <li class="advantagies__item advantagies__item--healthy">
               <p class="advantagies__text">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -101,9 +109,19 @@
             <span>Затраты на питание:</span>
             <span>15 000 руб.</span>
           </div>
-          <div class="illustration__slider illustration__slider--before">
+          <div class="illustration__slider slider-before">
+            <picture>
+              <source media="(min-width: 1200px)" width="560" height="512" srcset="images/fat-cat-tablet@1x.png, images/fat-cat-tablet@2x.png 2x" type="image/png">
+              <source media="(min-width: 768px)" width="560" height="512" srcset="images/fat-cat-tablet@1x.png, images/fat-cat-tablet@2x.png 2x" type="image/png">
+              <img class="slider__image" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+            </picture>
           </div>
-          <div class="illustration__slider illustration__slider--after">
+          <div class="illustration__slider slider-after">
+            <picture>
+              <source media="(min-width: 1200px)" width="560" height="512" srcset="images/skinny-cat-tablet@1x.png, images/skinny-cat-tablet@2x.png 2x" type="image/png">
+              <source media="(min-width: 768px)" width="560" height="512" srcset="images/skinny-cat-tablet@1x.png, images/skinny-cat-tablet@2x.png 2x" type="image/png">
+              <img class="slider__image" src="images/skinny-cat-mobile@1x.png" srcset="images/skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
           </div>
         </section>
 
@@ -111,7 +129,14 @@
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__info">
             <p class="contacts__text">Приглашаем <br>к сотрудничеству <br>дилеров!</p>
-            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петерсбург</address>
+            <address class="contacts__address">
+              <span>ул. Большая Конюшенная, д. 19/8 Санкт-Петерсбург</span>
+            </address>
+            <picture>
+              <source media="(min-width: 1200px)" width="1440" height="400" srcset="images/map-desktop@1x.png, images/map-desktop@2x.png 2x" type="image/png">
+              <source media="(min-width: 768px)" width="768" height="400" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" type="image/png">
+              <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с местоположением компании">
+            </picture>
           </div>
         </section>
       </div>
@@ -125,20 +150,20 @@
           <img class=" footer__logo-image" alt="Логотип сайта Кэт энерджи" src="#" width="128" height="24">
         </a>
       </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__list-item">
-            <a class="social__list-link social__list-link--vkontakte" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank">
+      <div class="footer__socials socials">
+        <ul class="socials__list">
+          <li class="socials__list-item">
+            <a class="socials__list-link socials__list-link--vkontakte" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank">
               <span class=" visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social__list-item">
-            <a class="social__list-link social__list-link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" rel="noreferrer noopener" target="_blank">
+          <li class="socials__list-item">
+            <a class="socials__list-link socials__list-link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" rel="noreferrer noopener" target="_blank">
               <span class=" visually-hidden">Youtube</span>
             </a>
           </li>
-          <li class="social__list-item">
-            <a class="social__list-link social__list-link--telegramm" href="https://t.me/htmlacademy" rel="noreferrer noopener" target="_blank">
+          <li class="socials__list-item">
+            <a class="socials__list-link socials__list-link--telegramm" href="https://t.me/htmlacademy" rel="noreferrer noopener" target="_blank">
               <span class=" visually-hidden">Телеграмм</span>
             </a>
           </li>
