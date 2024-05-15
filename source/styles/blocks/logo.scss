@@ -1,0 +1,15 @@
+.logo {
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}

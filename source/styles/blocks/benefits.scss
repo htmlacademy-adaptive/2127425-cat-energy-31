@@ -1,0 +1,27 @@
+.benefits {
+  align-self: center;
+}
+
+.benefits__card {
+  background-color: #f2f2f2;
+  padding: 0 20px;
+}
+
+.benefits__card-description {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
+  padding: 22px 0;
+}
+
+.benefits__card-link {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  color: $extra-color-text;
+  text-transform: uppercase;
+  align-items: center;
+  padding-top: 15px;
+}

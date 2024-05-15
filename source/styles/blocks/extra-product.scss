@@ -1,0 +1,19 @@
+.extra-product {
+  border-top: 1px solid $basic-color-cards;
+  padding: 13px 0 19px;
+}
+
+.extra-product__title {
+  grid-column: 1/-1;
+  line-height: 16px;
+}
+
+.extra-product__text {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extra-product__button {
+  grid-column: 1/-1;
+}
+

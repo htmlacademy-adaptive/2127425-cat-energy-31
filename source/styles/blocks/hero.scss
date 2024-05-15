@@ -1,0 +1,20 @@
+.hero__title {
+  color: $bg-basic;
+  opacity: 0.85;
+  background-color: $basic-color-button;
+}
+
+.hero__subtitle {
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: $bg-basic;
+  opacity: 0.85;
+  background-color: $basic-color-button;
+}
+
+.hero__button {
+  min-height: 40px;
+}
