@@ -4,6 +4,10 @@
 $tablet-width: 768px;
 $desctop-width: 1440px;
 
+// Fonts
+$primary-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald", "Arial", sans-serif;
+
 // Color
 $bg-basic: #ffffff;
 $basic-color-button: #68b738;
@@ -17,7 +21,4 @@ $extra-color-text: #000000;
 $basic-color-title: #222222;
 $basic-color-slider: #666666;
 $status-error: #ff8282;
-
-// Fonts
-$primary-font: "Lato", "Arial", sans-serif;
-$secondary-font: "Oswald", "Arial", sans-serif;
+$basic-color-border: #d9d9d9;

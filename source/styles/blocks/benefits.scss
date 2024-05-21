@@ -2,18 +2,42 @@
   align-self: center;
 }
 
-.benefits__card {
-  background-color: #f2f2f2;
-  padding: 0 20px;
+.benefits__item {
+  background-color: $bg-section-dark-button-secondary;
+  flex-wrap: wrap;
+  min-height: 266px;
+  margin-bottom: 20px;
+  padding: 23px 33px 18px 20px;
+  display: flex;
 }
 
-.benefits__card-description {
-  border-bottom: 1px solid #d9d9d9;
+.benefits__item::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 21px 12px 0;
+  display: inline-block;
+}
+
+.benefits__item--primary::before {
+  background-image: url("../../icons/stack.svg#cat-slim");
+  width: 50px;
+  height: 53px;
+}
+
+.benefits__item--secondary::before {
+  background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 50px;
+}
+
+.benefits__item-description {
+  border-bottom: 1px solid $basic-color-border;
   margin: 0;
   padding: 22px 0;
 }
 
-.benefits__card-link {
+.benefits__item-link {
   font-family: $secondary-font;
   font-size: 16px;
   font-style: normal;
