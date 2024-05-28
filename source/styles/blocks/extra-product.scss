@@ -4,8 +4,21 @@
 }
 
 .extra-product__title {
-  grid-column: 1/-1;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 16px;
+  color: $extra-color-text;
+  text-transform: uppercase;
+  grid-column: 1/-1;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-product__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-product__text {

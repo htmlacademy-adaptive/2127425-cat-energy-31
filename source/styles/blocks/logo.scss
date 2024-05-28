@@ -13,3 +13,10 @@
 .logo:active {
   opacity: 0.6;
 }
+
+@media (min-width: $desctop-width) {
+  .logo__text {
+    width: 118px;
+    height: 21px;
+  }
+}

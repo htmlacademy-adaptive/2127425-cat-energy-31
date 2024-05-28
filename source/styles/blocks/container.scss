@@ -3,3 +3,16 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    max-width: 1280px;
+  }
+}

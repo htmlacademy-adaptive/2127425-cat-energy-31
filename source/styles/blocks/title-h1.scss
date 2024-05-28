@@ -6,3 +6,10 @@
   line-height: 36px;
   color: $extra-color-text;
 }
+
+@media (min-width: $tablet-width) {
+  .title-h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
