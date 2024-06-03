@@ -47,3 +47,22 @@
   }
 }
 
+.catalog__item {
+  border-top: 1px solid $extra-color-button-hover;
+  padding: 19px 20px 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    background-image: linear-gradient(180deg, $bg-basic 16%, $bg-section-dark-button-secondary 16%);
+    border-top: none;
+    padding: 0 37px 40px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .catalog__item {
+    padding: 0 38px 40px;
+  }
+}
+
