@@ -27,7 +27,7 @@
   object-position: right;
 }
 
-.example__picture-toggle {
+.slider__image-toggle {
   cursor: pointer;
   background-color: $basic-color-slider;
   border: none;
@@ -42,16 +42,16 @@
   transform: translate(-50%, -50%);
 }
 
-.example__picture-toggle:hover {
+.slider__image-toggle:hover {
   background-color: $basic-color-button;
 }
 
-.example__picture-toggle:active {
+.slider__image-toggle:active {
   opacity: 0.6;
   background-color: $basic-color-button-hover;
 }
 
-.example__picture-toggle::before {
+.slider__image-toggle::before {
   content: "";
   background-color: $bg-basic;
   border: 2px solid $basic-color-slider;
@@ -64,15 +64,15 @@
   transform: translate(-50%, -50%);
 }
 
-.example__picture-toggle:hover::before {
+.slider__image-toggle:hover::before {
   border-color: $basic-color-button;
 }
 
-.example__picture-toggle:active::before {
+.slider__image-toggle:active::before {
   border-color: rgba(94, 170, 47, 0.6);
 }
 
-.example__picture-toggle::after {
+.slider__image-toggle::after {
   content: "";
   background-color: $basic-color-slider;
   width: 24px;
@@ -87,11 +87,11 @@
   mask-repeat: no-repeat;
 }
 
-.example__picture-toggle:hover::after {
+.slider__image-toggle:hover::after {
   background-color: $basic-color-button;
 }
 
-.example__picture-toggle:active::after {
+.slider__image-toggle:active::after {
   opacity: 0.6;
   background-color: $basic-color-button-hover;
 }
