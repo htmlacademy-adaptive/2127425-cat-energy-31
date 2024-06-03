@@ -1,5 +1,5 @@
 .extra-catalog__container {
-  padding-top: 24px;
+  padding-top: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,40 +10,24 @@
 
 @media (min-width: $desctop-width) {
   .extra-catalog__container {
-    display: grid;
-    grid-template-columns: repeat(auto, 245px);
-    gap: 80px;
     padding-top: 71px;
   }
 }
 
 .extra-catalog__title {
-  position: relative;
+  margin: 0;
 }
 
-.extra-catalog__title-text {
-  padding: 0 40px;
-  background-color: $bg-basic;
+@media (min-width: $tablet-width) {
+  .extra-catalog__title {
+    padding: 0 0 0 40px;
+  }
 }
 
 @media (min-width: $desctop-width) {
   .extra-catalog__title {
-    grid-column: 1 / span 2;
     padding: 0;
   }
-}
-
-.extra-catalog__title::after {
-  content: "";
-  z-index: -1;
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100vw;
-  background-color: $basic-color-button;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .extra-catalog__list {
@@ -54,11 +38,5 @@
 @media (min-width: $tablet-width) {
   .extra-catalog__list {
     margin: 80px 0 0;
-  }
-}
-
-@media (min-width: $desctop-width) {
-  .extra-catalog__list {
-    margin: 0;
   }
 }

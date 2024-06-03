@@ -11,7 +11,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px 50px;
-    counter-reset: new 0;
   }
 }
 
@@ -38,42 +37,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    counter-reset: advantages 1;
     gap: 31px;
     width: 250px;
     min-height: 280px;
   }
 }
 
-.advantages__item::after {
-  content: counter(advantages);
-  z-index: -1;
-  color: $bg-section-dark-button-secondary;
-  font-family: $secondary-font;
-  font-size: 280px;
-  line-height: 280px;
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 3px;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__item::after {
-    display: block;
-  }
-}
-
-.advantages__item--fast {
-  counter-increment: advantages 1;
-}
-
-.advantages__item--functional {
-  counter-increment: advantages 2;
-}
-
-.advantages__item--productive {
-  counter-increment: advantages 3;
+.advantages__item-text {
+  align-self: center;
+  margin: 0;
 }
 
 .advantages__item::before {
@@ -105,9 +77,4 @@
 .advantages__item--productive::before {
   background-image: url("../../icons/stack.svg#clock");
   background-size: 26px 31px;
-}
-
-.advantages__item-text {
-  align-self: center;
-  margin: 0;
 }

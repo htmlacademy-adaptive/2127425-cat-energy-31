@@ -13,6 +13,13 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
 .button--primary {
   color: $bg-basic;
   background-color: $basic-color-button;
