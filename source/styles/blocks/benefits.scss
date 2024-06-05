@@ -12,9 +12,10 @@
   }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .benefits__container {
     padding-top: 82px;
+    padding-bottom: 71px;
   }
 }
 
@@ -26,7 +27,13 @@
   padding: 0;
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $tablet-width) {
+  .benefits__list {
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .benefits__list {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
@@ -34,12 +41,37 @@
 }
 
 .benefits__item {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   background-color: $bg-section-dark-button-secondary;
-  min-height: 266px;
-  margin-bottom: 20px;
-  padding: 23px 33px 18px 20px;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px;
+  padding: 21px 20px 23px 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item {
+    grid-template-columns: 1fr auto;
+    column-gap: 20px;
+    padding: 76px 63px 57px 52px;
+  }
+
+  .benefits__item:last-child {
+    padding: 76px 29px 57px 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item {
+    grid-template-rows: max-content auto max-content;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 62px;
+    padding: 41px 61px 59px 52px;
+  }
+
+  .benefits__item:last-child {
+    column-gap: 64px;
+    padding: 45px 67px 59px 53px;
+  }
 }
 
 .benefits__item::before {
@@ -47,7 +79,6 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 21px 12px 0;
 }
 
 .benefits__item--primary::before {
@@ -56,19 +87,102 @@
   height: 53px;
 }
 
+@media (min-width: $tablet-width) {
+  .benefits__item--primary::before {
+    grid-row: span 3;
+    width: 200px;
+    height: 211px;
+    margin: 5px 0 0 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item--primary::before {
+    grid-row: 1/2;
+    width: 100px;
+    height: 106px;
+    margin: 0;
+  }
+}
+
 .benefits__item--secondary::before {
   background-image: url("../../icons/stack.svg#cat-pro");
   width: 67px;
   height: 50px;
+  margin: 2 -8px;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item--secondary::before {
+    grid-row: span 3;
+    width: 268px;
+    height: 200px;
+    margin: 15px 0 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item--secondary::before {
+    grid-row: 1/2;
+    width: 134px;
+    height: 100px;
+    margin: 3px -19px 0;
+  }
+}
+
+.benefits__item-title {
+  align-self: center;
+  margin: 1px 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item-title {
+    order: -1;
+    margin-bottom: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item-title {
+    order: 0;
+  }
 }
 
 .benefits__item-description {
   border-bottom: 1px solid $basic-color-border;
+  grid-column: -1/1;
   margin: 0;
   padding: 22px 0;
 }
 
+@media (min-width: $tablet-width) {
+  .benefits__item-description {
+    border-bottom: none;
+    grid-column: 1/-2;
+    padding: 21px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item-description {
+    grid-column: -1/1;
+    padding: 39px 0 25px;
+  }
+}
+
+.benefits__item-description--secondary {
+  padding: 21px 0;
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item-description--secondary {
+    padding: 38px 0 27px;
+  }
+}
+
 .benefits__item-link {
+  display: flex;
+  grid-column: -1/1;
   font-family: $secondary-font;
   font-size: 16px;
   font-style: normal;
@@ -78,5 +192,47 @@
   color: $extra-color-text;
   text-transform: uppercase;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 18px;
+  gap: 15px;
+  margin-left: 1px;
+}
+
+.benefits__item-link--secondary {
+  padding-top: 19px;
+}
+
+.benefits__item-link::after {
+  content: "";
+  width: 35px;
+  height: 11px;
+  background-image: url("../../icons/stack.svg#arrow-right");
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.benefits__item-link:hover,
+.benefits__item-link:hover::after {
+  opacity: 0.6;
+}
+
+.benefits__item-link:active {
+  opacity: 0.4;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__item-link {
+    grid-column: 1/2;
+    gap: 25px;
+    padding-top: 32px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits__item-link {
+    grid-column: -1/1;
+    padding: 0;
+  }
 }
