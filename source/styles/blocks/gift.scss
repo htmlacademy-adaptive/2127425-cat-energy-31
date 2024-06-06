@@ -3,6 +3,7 @@
   flex-flow: column wrap;
   text-align: center;
   justify-content: space-between;
+  background-color: $basic-color-button;
   background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 0% 100%), image-set("../images/gift-background-mobile@1x.webp" 1x type("image/webp"), "../images/gift-background-mobile@2x.webp" 2x type("image/webp"), "../images/gift-background-mobilee@1x.jpg" 1x type("image/jpg"), "../images/images/gift-background-mobile@2x.jpg" 2x type("image/jpg"));
   background-position: 50%;
   background-repeat: no-repeat;

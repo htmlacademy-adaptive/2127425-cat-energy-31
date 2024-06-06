@@ -5,6 +5,7 @@
   max-width: 280px;
   position: relative;
   margin-left: 1px;
+  width: min(100%, 560px);
 }
 
 @media (min-width: $tablet-width) {
