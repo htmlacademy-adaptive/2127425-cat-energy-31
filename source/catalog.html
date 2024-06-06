@@ -16,7 +16,7 @@
 
 <body class="page__body">
 
-  <header class="header">
+  <header class="header" data-test="header">
     <div class="header__container container">
       <a class="header__logo" href="index.html">
         <picture>
@@ -46,7 +46,7 @@
   </header>
 
   <main class="main main-container">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__container container">
         <h1 class="catalog__title title-h1">Каталог продукции</h1>
         <ul class="catalog__list list-reset">
@@ -248,7 +248,7 @@
       </div>
     </section>
 
-    <section class="extra-catalog container">
+    <section class="extra-catalog container" data-test="additional">
       <div class="extra-catalog__container">
         <h2 class="extra-catalog__title title-h2">
           <span class="extra-catalog__title-text">Дополнительные товары</span>
@@ -279,15 +279,14 @@
             <a class="extra-product__button button button--primary" href="#">Заказать</a>
           </li>
         </ul>
-
         <div class="extra-catalog__gift gift">
           <p class="gift__text">Закажите все <br>и получите чехол для <br>кота в подарок!</p>
         </div>
       </div>
     </section>
 
-    <section class="subscribe">
-      <div class="subscribe__container container">
+    <section class="subscribe container">
+      <div class="subscribe__container">
         <h2 class="subscribe__title title-h2">
           <span class="subscribe__title-text">Акции и новинки</span>
         </h2>
@@ -300,7 +299,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="contacts__container container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__info">
@@ -326,7 +325,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__container container">
       <div class="footer__logo">
         <a class="footer__logo-link" href="#">

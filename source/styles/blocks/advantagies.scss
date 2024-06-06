@@ -1,3 +1,7 @@
+.advantages__container {
+  padding-top: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     border-bottom: 1px solid #e6e6e6;
@@ -31,7 +35,7 @@
 
 .advantages__title {
   line-height: 40px;
-  margin: 20px 0 20px 2px;
+  margin: 0 20px 2px;
 }
 
 @media (min-width: $tablet-width) {
