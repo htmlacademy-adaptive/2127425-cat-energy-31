@@ -1,0 +1,73 @@
+.gift {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: space-between;
+  background-color: $basic-color-button;
+  background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 0% 100%), image-set("../images/gift-background-mobile@1x.webp" 1x type("image/webp"), "../images/gift-background-mobile@2x.webp" 2x type("image/webp"), "../images/gift-background-mobilee@1x.jpg" 1x type("image/jpg"), "../images/images/gift-background-mobile@2x.jpg" 2x type("image/jpg"));
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: offer;
+  align-items: center;
+  min-height: 290px;
+  margin: 0;
+  padding: 58px 58px 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 0% 100%), image-set("../images/gift-background-tablet@1x.webp" 1x type("image/webp"), "../images/gift-background-tablet@2x.webp" 2x type("image/webp"), "../images/gift-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/gift-background-tablet@2x.jpg" 2x type("image/jpg"));
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-flow: wrap;
+    min-height: 200px;
+    margin: 70px 0 0;
+    padding: 57px 125px 57px 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 0% 100%), image-set("../images/gift-background-desktop@1x.webp" 1x type("image/webp"), "../images/gift-background-desktop@2x.webp" 2x type("image/webp"), "../images/gift-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/gift-background-desktop@2x.jpg" 2x type("image/jpg"));
+    flex-direction: column;
+    min-height: 288px;
+    margin: 0 30px 0 0;
+    padding: 56px 42px 43px;
+    position: relative;
+  }
+}
+
+.gift::before {
+  content: "";
+  background-color: $bg-basic;
+  min-width: 78px;
+  min-height: 81px;
+  display: block;
+  top: 0;
+  left: 0;
+  mask-image: url("../../icons/stack.svg#gift");
+  mask-position: 50%;
+  mask-repeat: no-repeat;
+}
+
+.gift__text {
+  color: $bg-basic;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .gift__text {
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__text {
+    text-align: center;
+  }
+}

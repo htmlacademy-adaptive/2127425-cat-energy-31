@@ -1,0 +1,129 @@
+.slider {
+  display: grid;
+  aspect-ratio: 280/256;
+  grid-template-columns: 50% 50%;
+  max-width: 280px;
+  position: relative;
+  margin-left: 1px;
+  width: min(100%, 560px);
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    max-width: 560px;
+  }
+}
+
+.slider__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__image--before {
+  object-position: left;
+}
+
+.slider__image--after {
+  object-position: right;
+}
+
+.slider__image-toggle {
+  cursor: pointer;
+  background-color: $basic-color-slider;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__image-toggle:hover {
+  background-color: $basic-color-button;
+}
+
+.slider__image-toggle:focus,
+.slider__image-toggle:focus-visible {
+  background-color: $basic-color-button;
+}
+
+.slider__image-toggle:active {
+  opacity: 0.6;
+  background-color: $basic-color-button-hover;
+}
+
+.slider__image-toggle--disabled {
+  color: #bbbbbb;
+  pointer-events: none;
+}
+
+.slider__image-toggle::before {
+  content: "";
+  background-color: $bg-basic;
+  border: 2px solid $basic-color-slider;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__image-toggle:hover::before {
+  border-color: $basic-color-button;
+}
+
+.slider__image-toggle:focus::before,
+.slider__image-toggle:focus-visible::before {
+  border-color: $basic-color-button;
+}
+
+.slider__image-toggle:active::before {
+  border-color: rgba(94, 170, 47, 0.6);
+}
+
+.slider__image-toggle--disabled::before {
+  border-color: #bbbbbb;
+  pointer-events: none;
+}
+
+.slider__image-toggle::after {
+  content: "";
+  background-color: $basic-color-slider;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: url("../../icons/stack.svg#slider-arrow");
+  mask-position: 50%;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.slider__image-toggle:hover::after {
+  background-color: $basic-color-button;
+}
+
+.slider__image-toggle:focus::after,
+.slider__image-toggle:focus-visible::after {
+  background-color: $basic-color-button;
+}
+
+.slider__image-toggle:active::after {
+  opacity: 0.6;
+  background-color: $basic-color-button-hover;
+}
+
+.slider__image-toggle--disabled::after {
+  border-color: #bbbbbb;
+  pointer-events: none;
+}

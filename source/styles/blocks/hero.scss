@@ -1,0 +1,195 @@
+@media (max-width: 767px) {
+  .hero {
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    position: relative;
+  }
+
+  .hero::before {
+    content: "";
+    z-index: -2;
+    background-image: linear-gradient(270deg, rgba(99, 166, 59, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/hero-background-desktop@1x.webp" 1x type("image/webp"), "../images/hero-background-desktop@2x.webp" 2x type("image/webp"), "../images/hero-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/hero-background-desktop@2x.jpg" 2x type("image/jpg"));
+    background-color: rgba(99, 166, 59, 0.85);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: calc(100% + 1000px);
+    position: absolute;
+    top: -1000px;
+    right: 0;
+  }
+
+  .hero::after {
+    content: "";
+    z-index: -1;
+    background-image: linear-gradient(270deg, rgba(99, 166, 59, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/hero-background-desktop@1x.webp" 1x type("image/webp"), "../images/hero-background-desktop@2x.webp" 2x type("image/webp"), "../images/hero-background-desktop@1x.jpg" 1x type("image/jpg"), "../images/hero-background-desktop@2x.jpg" 2x type("image/jpg"));
+    background-color: rgba(99, 166, 59, 0.85);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: calc(100% + 114px);
+    position: absolute;
+    top: -114px;
+    right: 0;
+  }
+}
+
+.hero__container {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__container {
+    text-align: start;
+    margin: 64px 0 0 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__container {
+    max-width: 420px;
+    min-height: 580px;
+    margin: 0 0 0 80px;
+  }
+}
+
+.hero__container::before {
+  content: "";
+  z-index: -1;
+  background-image: linear-gradient(90deg, #545358 0%, #424045 100%);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 63%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__container::before {
+    display: none;
+  }
+}
+
+.hero__container::after {
+  content: "";
+  z-index: -1;
+  background-image: linear-gradient(270deg, rgba(99, 166, 59, 0.85), rgba(104, 183, 56, 0.85)), image-set("../images/hero-background-mobile@1x.webp" 1x type("image/webp"), "../images/hero-background-mobile@2x.webp" 2x type("image/webp"), "../images/hero-background-mobile@1x.jpg" 1x type("image/jpg"), "../images/hero-background-mobile@2x.jpg" 2x type("image/jpg"));
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 63%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__container::after {
+    display: none;
+  }
+}
+
+.hero__title {
+  color: $bg-basic;
+  margin: 27px 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__title {
+    color: $extra-color-text;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__title {
+    margin: 110px 0 0;
+  }
+}
+
+.hero__subtitle {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $bg-basic;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: 25px 0 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__subtitle {
+    color: $extra-color-text;
+    background-color: $bg-basic;
+    margin: 40px 0 51px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__subtitle {
+    margin: 40px 0 53px;
+  }
+}
+
+.hero__image-wrapper {
+  margin: 28px 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__image-wrapper {
+    order: 1;
+    margin: -84px 0 -4px -90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__image-wrapper {
+    width: 552px;
+    height: 100%;
+    margin: 29px 0 0 -54px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+}
+
+.hero__button {
+  text-align: center;
+  width: 100%;
+  margin-top: -1px;
+  display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__button {
+    z-index: 1;
+    letter-spacing: 0.15px;
+    width: fit-content;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__button {
+    max-width: 420px;
+  }
+}
