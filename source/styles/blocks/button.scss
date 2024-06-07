@@ -23,6 +23,11 @@
   background-color: $basic-color-button-hover;
 }
 
+.button--primary:focus,
+.button--primary:focus-visible {
+  background-color: $basic-color-button-hover;
+}
+
 .button--primary:active {
   opacity: 0.3;
 }
@@ -32,7 +37,22 @@
   background-color: $bg-section-dark-button-secondary;
 }
 
-.button--secondary:hover,
+.button--secondary:hover {
+  background-color: $extra-color-button-hover;
+}
+
+.button--secondary:focus,
+.button--secondary:focus-visible {
+  opacity: 0.6;
+}
+
 .button--secondary:active {
   background-color: $extra-color-button-hover;
+}
+
+.button--disabled {
+  background-color: #bbbbbb;
+  color: $bg-basic;
+  opacity: 0.3;
+  pointer-events: none;
 }

@@ -18,7 +18,7 @@
   .extra-catalog__container {
     display: grid;
     grid-template-columns: repeat(auto, 245px);
-    gap: 80px;
+    gap: 78px 80px;
   }
 }
 
@@ -41,9 +41,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .extra-catalog__title-text {
+    padding: 0 40px 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .extra-catalog__title {
     grid-column: 1 / span 2;
-    padding: 0;
   }
 }
 
@@ -68,18 +73,18 @@
 
 .extra-catalog__list {
   margin: 0;
-  padding: 35px 30px;
+  padding: 35px 0;
 }
 
 @media (min-width: $tablet-width) {
   .extra-catalog__list {
-    padding: 77px 0 0;
+    padding: 76px 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-catalog__list {
-    margin-left: 30px;
+    margin-left: 31px;
     padding: 0;
   }
 }

@@ -67,6 +67,11 @@
   opacity: 0.8;
 }
 
+.header__logo:focus,
+.header__logo:focus-visible {
+  opacity: 0.8;
+}
+
 .header__logo:active {
   opacity: 0.6;
 }

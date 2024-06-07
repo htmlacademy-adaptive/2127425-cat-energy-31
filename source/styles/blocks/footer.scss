@@ -118,6 +118,24 @@
   opacity: 0.8;
 }
 
+.footer__copyright-link:hover::after {
+  background-color: $basic-color-button;
+}
+
+.footer__copyright-link:focus::after,
+.footer__copyright-link:focus-visible::after {
+  background-color: $basic-color-button;
+}
+
+.footer__copyright-linkk:active::after {
+  opacity: 0.3;
+}
+
+.socials__list-link--disabled {
+  color: #bbbbbb;
+  pointer-events: none;
+}
+
 @media (min-width: $tablet-width) {
   .footer__copyright-link-name {
     display: block;

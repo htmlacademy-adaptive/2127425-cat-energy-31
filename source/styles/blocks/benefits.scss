@@ -3,19 +3,18 @@
 }
 
 .benefits__container {
-  padding: 0 20px;
+  padding: 20px 20px 0;
 }
 
 @media (min-width: $tablet-width) {
   .benefits__container {
-    padding-top: 0;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .benefits__container {
-    padding-top: 82px;
-    padding-bottom: 71px;
+    padding-top: 81px;
   }
 }
 
@@ -203,7 +202,7 @@
 
 .benefits__item-link::after {
   content: "";
-  width: 35px;
+  min-width: 35px;
   height: 11px;
   background-image: url("../../icons/stack.svg#arrow-right");
   background-position: 50%;
@@ -216,8 +215,18 @@
   opacity: 0.6;
 }
 
+.benefits__item-link:focus,
+.benefits__item-link:focus-visible {
+  opacity: 0.6;
+}
+
 .benefits__item-link:active {
   opacity: 0.4;
+}
+
+.benefits__item-link--disabled {
+  color: #bbbbbb;
+  pointer-events: none;
 }
 
 @media (min-width: $tablet-width) {

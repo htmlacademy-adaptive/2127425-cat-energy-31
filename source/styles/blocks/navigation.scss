@@ -70,8 +70,18 @@
   opacity: 0.6;
 }
 
+.navigation__link:focus,
+.navigation__link:focus-visible {
+  opacity: 0.6;
+}
+
 .navigation__link:active {
   opacity: 0.3;
+}
+
+.navigation__link--disabled {
+  color: #bbbbbb;
+  pointer-events: none;
 }
 
 @media (max-width: 767px) {
@@ -111,7 +121,7 @@
   .navigation__link--current {
     border-bottom: 2px solid $basic-color-button;
     font-size: 20px;
-    padding: 11px 0 6px;
+    padding: 10px 0 6px;
   }
 
   .navigation__link-color {
@@ -122,8 +132,18 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
+  .navigation__link-color:focus,
+  .navigation__link-color:focus-visible {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
   .navigation__link-color:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  .navigation__link-color--disabled {
+    color: #bbbbbb;
+    pointer-events: none;
   }
 
   .navigation__link-color--current {

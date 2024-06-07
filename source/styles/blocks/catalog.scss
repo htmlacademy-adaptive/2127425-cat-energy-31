@@ -34,7 +34,7 @@
   .catalog__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 65px 61px;
-    padding: 95px 0 0;
+    padding: 90px 0 0;
     display: grid;
   }
 }
@@ -42,7 +42,7 @@
 @media (min-width: $desktop-width) {
   .catalog__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 63px 80px;
-    padding: 84px 0 0;
+    gap: 72px 80px;
+    padding: 90px 0 0;
   }
 }
