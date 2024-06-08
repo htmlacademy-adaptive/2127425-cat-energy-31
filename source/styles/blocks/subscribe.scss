@@ -48,18 +48,14 @@
   width: 100vw;
   background-color: $basic-color-button;
   top: 50%;
-  left: 80%;
+  left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@media (min-width: $tablet-width) {
-  .subscribe__title::after {
-    left: 50%;
-  }
 }
 
 .subscribe__title-text {
   padding-right: 40px;
+  padding-left: 20px;
+  margin-left: -20px;
   background-color: $bg-basic;
   display: inline-block;
 }
@@ -68,6 +64,7 @@
   .subscribe__title-text {
     padding: 0 40px;
     line-height: 43px;
+    margin: 0;
   }
 }
 
@@ -133,10 +130,12 @@
 .subscribe__input:focus,
 .subscribe__input:focus-visible {
   border: 2px solid $basic-color-text;
+  padding-left: 12px;
 }
 
 .subscribe__input:focus:invalid {
   border: 2px solid $status-error;
+  padding-left: 12px;
 }
 
 .subscribe__input:disabled {

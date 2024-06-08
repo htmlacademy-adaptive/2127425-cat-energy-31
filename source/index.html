@@ -53,9 +53,12 @@
           <p class="hero__subtitle">Занялся собой? Займись котом!</p>
           <div class="hero__image-wrapper">
             <picture>
+              <source media="(min-width: 1440px)" width="552" height="499" srcset="images/hero-image-desktop@1x.webp, images/hero-image-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.webp, images/hero-image-tablet@2x.webp 2x" type="image/webp">
+              <source width="280" height="270" srcset="images/hero-image-mobile@1x.png, images/hero-image-mobile@2x.png 2x" type="image/webp">
               <source media="(min-width: 1440px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png, images/hero-image-desktop@2x.png 2x" type="image/png">
               <source media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png, images/hero-image-tablet@2x.png 2x" type="image/png">
-              <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Банка с питанием для котов Cat energy">
+              <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" loading="lazy" alt="Банка с питанием для котов Cat energy">
             </picture>
           </div>
           <a class="hero__button button button--primary" href="#">Подобрать программу</a>
@@ -125,14 +128,20 @@
         </div>
         <div class="illustration__slider slider">
           <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" srcset="images/fat-cat-tablet@1x.webp, images/fat-cat-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" width="560" height="512" srcset="images/fat-cat-tablet@1x.webp, images/fat-cat-tablet@2x.webp 2x" type="image/webp">
+            <source width="280" height="256" srcset="images/fat-cat-mobile@1x.webp, images/fat-cat-mobile@2x.webp 2x" type="image/webp">
             <source media="(min-width: 1440px)" width="560" height="512" srcset="images/fat-cat-tablet@1x.png, images/fat-cat-tablet@2x.png 2x" type="image/png">
             <source media="(min-width: 768px)" width="560" height="512" srcset="images/fat-cat-tablet@1x.png, images/fat-cat-tablet@2x.png 2x" type="image/png">
-            <img class="slider__image slider__image--before" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+            <img class="slider__image slider__image--before" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" loading="lazy" alt="Толстый кот">
           </picture>
           <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" srcset="images/skinny-cat-tablet@1x.webp, images/skinny-cat-tablet@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" width="560" height="512" srcset="images/skinny-cat-tablet@1x.webp, images/skinny-cat-tablet@2x.webp 2x" type="image/webp">
+            <source width="280" height="256" srcset="images/skinny-cat-mobile@1x.png, images/skinny-cat-mobile@2x.png 2x" type="image/webp">
             <source media="(min-width: 1440px)" width="560" height="512" srcset="images/skinny-cat-tablet@1x.png, images/skinny-cat-tablet@2x.png 2x" type="image/png">
             <source media="(min-width: 768px)" width="560" height="512" srcset="images/skinny-cat-tablet@1x.png, images/skinny-cat-tablet@2x.png 2x" type="image/png">
-            <img class="slider__image slider__image--after" src="images/skinny-cat-mobile@1x.png" srcset="images/skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+            <img class="slider__image slider__image--after" src="images/skinny-cat-mobile@1x.png" srcset="images/skinny-cat-mobile@2x.png 2x" width="280" height="256" loading="lazy" alt="Худой кот">
           </picture>
           <button class="slider__image-toggle" type="button" aria-label="Ползунок слайдера"></button>
         </div>
@@ -152,9 +161,12 @@
       <div class="contacts__map">
         <noscript>
           <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" srcset="images/map-desktop@1x.webp, images/map-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" width="768" height="400" srcset="images/map-tablet@1x.webp, images/map-tablet@2x.webp 2x" type="image/webp">
+            <source width="320" height="362" srcset="images/map-mobile@1x.webp, images/map-mobile@2x.webp 2x" type="image/webp">
             <source media="(min-width: 1440px)" width="1440" height="400" srcset="images/map-desktop@1x.png, images/map-desktop@2x.png 2x" type="image/png">
             <source media="(min-width: 768px)" width="768" height="400" srcset="images/map-tablet@1x.png, images/map-tablet@2x.png 2x" type="image/png">
-            <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с местоположением компании">
+            <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" loading="lazy" alt="Карта с местоположением компании">
           </picture>
         </noscript>
         <div class="contacts__map-iframe">
