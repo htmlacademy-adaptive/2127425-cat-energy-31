@@ -29,14 +29,17 @@
 
 .extra-catalog__title-text {
   padding-right: 40px;
+  padding-left: 20px;
+  margin-left: -20px;
   background-color: $bg-basic;
   display: inline-block;
 }
 
 @media (min-width: $tablet-width) {
   .extra-catalog__title-text {
-    line-height: 43px;
     padding: 0 40px;
+    line-height: 43px;
+    margin: 0;
   }
 }
 
@@ -61,14 +64,8 @@
   width: 100vw;
   background-color: $basic-color-button;
   top: 50%;
-  left: 80%;
+  left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@media (min-width: $tablet-width) {
-  .extra-catalog__title::after {
-    left: 50%;
-  }
 }
 
 .extra-catalog__list {

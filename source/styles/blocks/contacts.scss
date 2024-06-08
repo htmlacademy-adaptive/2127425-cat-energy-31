@@ -2,9 +2,13 @@
   position: relative;
 }
 
-@media (min-width: $tablet-width) {
+.contacts__bacground {
+  background-color: $bg-section-dark-button-secondary;
+}
+
+@media (min-width: $desktop-width) {
   .contacts__bacground {
-    background-color: $bg-section-dark-button-secondary;
+    background-color: $bg-basic;
   }
 }
 
